@@ -1,20 +1,20 @@
 class I18nhero < Formula
   desc "CLI tool for interacting with locales hosted on i18nhero.com"
   homepage "https://i18nhero.com"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/i18nhero/cli/releases/download/v0.0.1/i18nhero-aarch64-apple-darwin.tar.gz"
-      sha256 "08af5505bb8badef8ca71b65f0cd565d6b84e40f30ff3e2e978cd5a334bc74d5"
+      url "https://github.com/i18nhero/cli/releases/download/v0.0.2/i18nhero-aarch64-apple-darwin.tar.gz"
+      sha256 "6980f489168e6e338594bdd9bbdfb69706eedb5f4fed0088449381aec7a546c7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/i18nhero/cli/releases/download/v0.0.1/i18nhero-x86_64-apple-darwin.tar.gz"
-      sha256 "5382f29a80254ec73a17ede159b768fad286bed2b429b5ab0a493f1e0a7fef42"
+      url "https://github.com/i18nhero/cli/releases/download/v0.0.2/i18nhero-x86_64-apple-darwin.tar.gz"
+      sha256 "6065efcfc2ea34c276852c7ea0b12ffc8659fecebcf9277ddf54d927a8435a92"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/i18nhero/cli/releases/download/v0.0.1/i18nhero-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e252add31cb6c50973199b114a094d0eeaf23a51fb665cbf5d9250c8bf075ca9"
+    url "https://github.com/i18nhero/cli/releases/download/v0.0.2/i18nhero-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "6cf6722a991285d68330637b7474d2270cde3825db98bba8e06bf85fe806df5f"
   end
   license "MIT"
 
